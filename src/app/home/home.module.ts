@@ -6,6 +6,7 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import { HijoComponent } from '../contador/hijo/hijo.component';
+import { NietoComponent } from '../contador/nieto/nieto.component';
 
 @NgModule({
   imports: [
@@ -14,6 +15,8 @@ import { HijoComponent } from '../contador/hijo/hijo.component';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage,HijoComponent]
+  declarations: [HomePage,HijoComponent,NietoComponent]
 })
 export class HomePageModule {}
+
+

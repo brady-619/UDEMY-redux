@@ -1,0 +1,62 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  
+
+<ion-grid fixed>
+  <ion-row>
+    <ion-col size="6">
+
+Contador
+
+{{contador}}
+
+<br>
+
+
+
+
+<button (click)="incrementar()" class="btn btn-primary">
+  Incrementar
+</button>
+
+
+<button (click)="decrementar()" class="btn btn-info">
+  Decrementar
+</button>
+
+
+
+
+
+
+
+    </ion-col>
+    
+  </ion-row>
+</ion-grid>
+
+
+<hr>
+
+
+<div class="row">
+  <div class="col">
+
+<app-hijo></app-hijo>
+
+  </div>
+
+
+  </div>
+
+
+
+</ion-content>

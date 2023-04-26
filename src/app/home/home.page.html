@@ -1,63 +1,35 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title> Blank </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  
-  
+  <div class="row text-center">
+    <div class="col">
+      Contador {{contador}}
+
+      <br />
+
+      <button (click)="incrementar()" class="btn btn-primary">
+        Incrementar
+      </button>
+
+      <button (click)="decrementar()" class="btn btn-info">Decrementar</button> 
+    </div>
+  </div>
 
 
+
+  <hr />
 
   <div class="row text-center">
     <div class="col">
-
-Contador
-
-{{contador}}
-
-<br>
-
-
-
-
-<button (click)="incrementar()" class="btn btn-primary">
-  Incrementar
-</button>
-
-
-<button (click)="decrementar()" class="btn btn-info">
-  Decrementar
-</button>
-
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-<hr>
-
-
-<div class="row text-center">
-  <div class="col">
-
-<app-hijo [contador]="contador" (cambiocontador)="contador= $event"></app-hijo>
-
+      <!-- <app-hijo
+        [contador]="contador"
+        (cambiocontador)="contador= $event"
+      ></app-hijo> -->
+      <app-hijo></app-hijo>
+    </div>
   </div>
-
-
-  </div>
-
-
-
 </ion-content>
